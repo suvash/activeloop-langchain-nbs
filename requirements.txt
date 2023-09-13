@@ -17,10 +17,40 @@ aioitertools==0.11.0
     # via aiobotocore
 aiosignal==1.3.1
     # via aiohttp
+anyio==3.7.1
+    # via jupyter-server
+appnope==0.1.3
+    # via
+    #   ipykernel
+    #   ipython
+argon2-cffi==21.3.0
+    # via jupyter-server
+argon2-cffi-bindings==21.2.0
+    # via argon2-cffi
+arrow==1.2.3
+    # via isoduration
+asttokens==2.2.1
+    # via stack-data
+async-lru==2.0.4
+    # via jupyterlab
 async-timeout==4.0.2
     # via aiohttp
 attrs==23.1.0
-    # via aiohttp
+    # via
+    #   aiohttp
+    #   jsonschema
+    #   referencing
+babel==2.12.1
+    # via jupyterlab-server
+backcall==0.2.0
+    # via ipython
+beautifulsoup4==4.12.2
+    # via
+    #   feedfinder2
+    #   nbconvert
+    #   newspaper3k
+bleach==6.0.0
+    # via nbconvert
 boto3==1.26.76
     # via
     #   aiobotocore
@@ -30,46 +60,158 @@ botocore==1.29.76
     #   aiobotocore
     #   boto3
     #   s3transfer
+build==0.10.0
+    # via pip-tools
 certifi==2023.7.22
     # via requests
+cffi==1.15.1
+    # via argon2-cffi-bindings
 charset-normalizer==3.2.0
     # via
     #   aiohttp
     #   requests
 click==8.1.6
-    # via deeplake
-dataclasses-json==0.5.13
+    # via
+    #   deeplake
+    #   nltk
+    #   pip-tools
+comm==0.1.3
+    # via ipykernel
+cssselect==1.2.0
+    # via newspaper3k
+dataclasses-json==0.5.14
     # via langchain
-deeplake==3.6.5
+debugpy==1.6.7
+    # via ipykernel
+decorator==5.1.1
+    # via ipython
+deeplake==3.6.15
     # via -r requirements.in
+defusedxml==0.7.1
+    # via nbconvert
 dill==0.3.7
     # via
     #   multiprocess
     #   pathos
 entrypoints==0.4
     # via numcodecs
+executing==1.2.0
+    # via stack-data
+fastjsonschema==2.18.0
+    # via nbformat
+feedfinder2==0.0.4
+    # via newspaper3k
+feedparser==6.0.10
+    # via newspaper3k
+filelock==3.12.3
+    # via
+    #   huggingface-hub
+    #   tldextract
+    #   transformers
+fqdn==1.5.1
+    # via jsonschema
 frozenlist==1.4.0
     # via
     #   aiohttp
     #   aiosignal
+fsspec==2023.9.0
+    # via huggingface-hub
 greenlet==2.0.2
     # via sqlalchemy
+huggingface-hub==0.17.1
+    # via
+    #   -r requirements.in
+    #   transformers
 humbug==0.3.2
     # via deeplake
 idna==3.4
     # via
+    #   anyio
+    #   jsonschema
     #   requests
+    #   tldextract
     #   yarl
+ipykernel==6.25.0
+    # via jupyterlab
+ipython==8.14.0
+    # via ipykernel
+isoduration==20.11.0
+    # via jsonschema
+jedi==0.19.0
+    # via ipython
+jieba3k==0.35.1
+    # via newspaper3k
+jinja2==3.1.2
+    # via
+    #   jupyter-server
+    #   jupyterlab
+    #   jupyterlab-server
+    #   nbconvert
 jmespath==1.0.1
     # via
     #   boto3
     #   botocore
-langchain==0.0.208
+joblib==1.3.2
+    # via nltk
+json5==0.9.14
+    # via jupyterlab-server
+jsonpointer==2.4
+    # via jsonschema
+jsonschema[format-nongpl]==4.18.4
+    # via
+    #   jupyter-events
+    #   jupyterlab-server
+    #   nbformat
+jsonschema-specifications==2023.7.1
+    # via jsonschema
+jupyter-client==8.3.0
+    # via
+    #   ipykernel
+    #   jupyter-server
+    #   nbclient
+jupyter-core==5.3.1
+    # via
+    #   ipykernel
+    #   jupyter-client
+    #   jupyter-server
+    #   jupyterlab
+    #   nbclient
+    #   nbconvert
+    #   nbformat
+jupyter-events==0.7.0
+    # via jupyter-server
+jupyter-lsp==2.2.0
+    # via jupyterlab
+jupyter-server==2.7.0
+    # via
+    #   jupyter-lsp
+    #   jupyterlab
+    #   jupyterlab-server
+    #   notebook-shim
+jupyter-server-terminals==0.4.4
+    # via jupyter-server
+jupyterlab==4.0.3
     # via -r requirements.in
-langchainplus-sdk==0.0.20
-    # via langchain
+jupyterlab-pygments==0.2.2
+    # via nbconvert
+jupyterlab-server==2.24.0
+    # via jupyterlab
+langchain==0.0.152
+    # via -r requirements.in
+lxml==4.9.3
+    # via newspaper3k
+markupsafe==2.1.3
+    # via
+    #   jinja2
+    #   nbconvert
 marshmallow==3.20.1
     # via dataclasses-json
+matplotlib-inline==0.1.6
+    # via
+    #   ipykernel
+    #   ipython
+mistune==3.0.1
+    # via nbconvert
 multidict==6.0.4
     # via
     #   aiohttp
@@ -78,80 +220,267 @@ multiprocess==0.70.15
     # via pathos
 mypy-extensions==1.0.0
     # via typing-inspect
-nest-asyncio==1.5.6
-    # via deeplake
+nbclient==0.8.0
+    # via nbconvert
+nbconvert==7.7.3
+    # via jupyter-server
+nbformat==5.9.2
+    # via
+    #   jupyter-server
+    #   nbclient
+    #   nbconvert
+nest-asyncio==1.5.7
+    # via
+    #   deeplake
+    #   ipykernel
+newspaper3k==0.2.8
+    # via -r requirements.in
+nltk==3.8.1
+    # via newspaper3k
+notebook-shim==0.2.3
+    # via jupyterlab
 numcodecs==0.11.0
     # via deeplake
 numexpr==2.8.4
     # via langchain
-numpy==1.25.1
+numpy==1.25.2
     # via
     #   deeplake
     #   langchain
     #   numcodecs
     #   numexpr
+    #   transformers
 openai==0.27.8
     # via -r requirements.in
 openapi-schema-pydantic==1.2.4
     # via langchain
+overrides==7.3.1
+    # via jupyter-server
 packaging==23.1
-    # via marshmallow
+    # via
+    #   build
+    #   huggingface-hub
+    #   ipykernel
+    #   jupyter-server
+    #   jupyterlab
+    #   jupyterlab-server
+    #   marshmallow
+    #   nbconvert
+    #   transformers
+pandocfilters==1.5.0
+    # via nbconvert
+parso==0.8.3
+    # via jedi
 pathos==0.3.1
     # via deeplake
+pexpect==4.8.0
+    # via ipython
+pickleshare==0.7.5
+    # via ipython
 pillow==10.0.0
-    # via deeplake
+    # via
+    #   deeplake
+    #   newspaper3k
+pip-tools==7.1.0
+    # via -r requirements.in
+platformdirs==3.10.0
+    # via jupyter-core
 pox==0.3.3
     # via pathos
 ppft==1.7.6.7
     # via pathos
-pydantic==1.10.11
+prometheus-client==0.17.1
+    # via jupyter-server
+prompt-toolkit==3.0.39
+    # via ipython
+psutil==5.9.5
+    # via ipykernel
+ptyprocess==0.7.0
+    # via
+    #   pexpect
+    #   terminado
+pure-eval==0.2.2
+    # via stack-data
+pycparser==2.21
+    # via cffi
+pydantic==1.10.12
     # via
     #   langchain
-    #   langchainplus-sdk
     #   openapi-schema-pydantic
+pygments==2.15.1
+    # via
+    #   ipython
+    #   nbconvert
 pyjwt==2.8.0
     # via deeplake
+pyllamacpp==1.0.7
+    # via -r requirements.in
+pypdf==3.16.0
+    # via -r requirements.in
+pyproject-hooks==1.0.0
+    # via build
 python-dateutil==2.8.2
-    # via botocore
+    # via
+    #   arrow
+    #   botocore
+    #   jupyter-client
+    #   newspaper3k
+python-json-logger==2.0.7
+    # via jupyter-events
 pyyaml==6.0.1
-    # via langchain
+    # via
+    #   huggingface-hub
+    #   jupyter-events
+    #   langchain
+    #   newspaper3k
+    #   transformers
+pyzmq==25.1.0
+    # via
+    #   ipykernel
+    #   jupyter-client
+    #   jupyter-server
+referencing==0.30.0
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
+    #   jupyter-events
 regex==2023.6.3
-    # via tiktoken
+    # via
+    #   nltk
+    #   tiktoken
+    #   transformers
 requests==2.31.0
     # via
+    #   -r requirements.in
+    #   feedfinder2
+    #   huggingface-hub
     #   humbug
+    #   jupyterlab-server
     #   langchain
-    #   langchainplus-sdk
+    #   newspaper3k
     #   openai
+    #   requests-file
     #   tiktoken
+    #   tldextract
+    #   transformers
+requests-file==1.5.1
+    # via tldextract
+rfc3339-validator==0.1.4
+    # via
+    #   jsonschema
+    #   jupyter-events
+rfc3986-validator==0.1.1
+    # via
+    #   jsonschema
+    #   jupyter-events
+rpds-py==0.9.2
+    # via
+    #   jsonschema
+    #   referencing
 s3transfer==0.6.1
     # via boto3
+safetensors==0.3.3
+    # via transformers
+send2trash==1.8.2
+    # via jupyter-server
+sentencepiece==0.1.99
+    # via -r requirements.in
+sgmllib3k==1.0.0
+    # via feedparser
 six==1.16.0
-    # via python-dateutil
+    # via
+    #   asttokens
+    #   bleach
+    #   feedfinder2
+    #   python-dateutil
+    #   requests-file
+    #   rfc3339-validator
+sniffio==1.3.0
+    # via anyio
+soupsieve==2.4.1
+    # via beautifulsoup4
 sqlalchemy==2.0.19
     # via langchain
+stack-data==0.6.2
+    # via ipython
 tenacity==8.2.2
+    # via langchain
+terminado==0.17.1
     # via
-    #   langchain
-    #   langchainplus-sdk
+    #   jupyter-server
+    #   jupyter-server-terminals
 tiktoken==0.4.0
     # via -r requirements.in
+tinycss2==1.2.1
+    # via nbconvert
+tinysegmenter==0.3
+    # via newspaper3k
+tldextract==3.5.0
+    # via newspaper3k
+tokenizers==0.13.3
+    # via transformers
+tornado==6.3.2
+    # via
+    #   ipykernel
+    #   jupyter-client
+    #   jupyter-server
+    #   jupyterlab
+    #   terminado
 tqdm==4.65.0
     # via
     #   deeplake
+    #   huggingface-hub
+    #   langchain
+    #   nltk
     #   openai
+    #   transformers
+traitlets==5.9.0
+    # via
+    #   comm
+    #   ipykernel
+    #   ipython
+    #   jupyter-client
+    #   jupyter-core
+    #   jupyter-events
+    #   jupyter-server
+    #   jupyterlab
+    #   matplotlib-inline
+    #   nbclient
+    #   nbconvert
+    #   nbformat
+transformers==4.33.1
+    # via -r requirements.in
 typing-extensions==4.7.1
     # via
+    #   huggingface-hub
     #   pydantic
     #   sqlalchemy
     #   typing-inspect
 typing-inspect==0.9.0
     # via dataclasses-json
+uri-template==1.3.0
+    # via jsonschema
 urllib3==1.26.16
     # via
     #   botocore
     #   requests
+wcwidth==0.2.6
+    # via prompt-toolkit
+webcolors==1.13
+    # via jsonschema
+webencodings==0.5.1
+    # via
+    #   bleach
+    #   tinycss2
+websocket-client==1.6.1
+    # via jupyter-server
+wheel==0.41.0
+    # via pip-tools
 wrapt==1.15.0
     # via aiobotocore
 yarl==1.9.2
     # via aiohttp
+
+# The following packages are considered to be unsafe in a requirements file:
+# pip
+# setuptools
